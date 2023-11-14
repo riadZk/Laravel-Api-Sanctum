@@ -19,9 +19,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::resource('product', ProductController::class);
     Route::get('profile',[AuthController::class,'profile']);
     Route::post('logout',[AuthController::class,'logout']);
-    Route::get('user', function(Request $request){
-        return $request->user();
-    });
+    // Route::get('user', function(Request $request){
+    //     return $request->user();
+    // });
 
 });
 
